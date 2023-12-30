@@ -11,7 +11,7 @@ From initial Prompt type the following commands:
 
 ```
 pacman -Sy git
-git clone https://github.com/JeffreyManuel/jeff-arch
+git clone https://github.com/Jeffrey2081/jeff-arch
 cd jeff-arch
 chmod +x ./preinstall.sh
 ./preinstall.sh
