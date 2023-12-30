@@ -102,6 +102,7 @@ echo "linux /vmlinuz-linux" >> /boot/loader/entries/arch.conf
 echo "initrd /initramfs-linux.img" >> /boot/loader/entries/arch.conf
 echo "options root=${DRIVE}2 rw" >> /boot/loader/entries/arch.conf
 
+exit 
 EOF
 
 # Exit the chroot environment
