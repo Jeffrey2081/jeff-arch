@@ -27,8 +27,10 @@ yay -S nerd-fonts-complete-starship noto-fonts-emoji netctl variety feh ttf-font
 # Theming
 cd ~/jeff-arch || exit
 sudo cp -r bg.jpg /home/$USER/Pictures/bg.jpg
-sudo cp -r dotfonts/* /home/$USER/.fonts/
 sudo cp -r dotconfig/* /home/$USER/.config/
+git clone https://github.com/Jeffrey2081/fonts
+sudo cp -r fonts/dotfonts/* /home/$USER/.fonts/
+
 
 git clone https://github.com/alvatip/Nordzy-cursors
 cd Nordzy-cursors 
