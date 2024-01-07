@@ -35,11 +35,11 @@ sudo cp -r fonts/dotfonts/* /home/$USER/.fonts/
 git clone https://github.com/alvatip/Nordzy-cursors
 cd Nordzy-cursors 
 sudo bash install.sh
-sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-sudo mv fonts/dotfonts/fontawesome/otfs/* /home/$USER/.fonts/
-sudo unzip FiraCode.zip -d /home/$USER/.fonts/
-sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
-sudo unzip Meslo.zip -d /home/$USER/.fonts/
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+mv fonts/dotfonts/fontawesome/otfs/* /home/$USER/.fonts/
+unzip FiraCode.zip -d /home/$USER/.fonts/
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
+ unzip Meslo.zip -d /home/$USER/.fonts/
 sudo chown $USER:$USER /home/$USER/.fonts/*
 cd /usr/share/themes/ 
 sudo git clone https://github.com/EliverLara/Nordic.git
