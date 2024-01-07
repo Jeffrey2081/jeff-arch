@@ -41,3 +41,4 @@ cd /usr/share/themes/
 sudo git clone https://github.com/EliverLara/Nordic.git
 sudo systemctl enable sddm
 sudo fc-cache -vf
+fc-cache -vf
