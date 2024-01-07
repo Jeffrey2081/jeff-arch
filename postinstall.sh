@@ -7,7 +7,8 @@ set -e
 sudo pacman -Syu --needed --noconfirm curl terminus-font base-devel rsync reflector networkmanager git neofetch nano vim 
 # Enable parellel Downloads
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
-# Setting Mirrors for fast downloads 
+#Setting Mirrors for fast downloads
+echo "Setting Mirrors for fast downloads"
 sudo systemctl start reflector.service
 # Installing yay aur helper
 git clone https://aur.archlinux.org/yay-git.git
