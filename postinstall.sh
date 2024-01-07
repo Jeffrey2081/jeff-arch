@@ -1,15 +1,14 @@
 #! /bin/sh
+sudo setfont ter-v22b
+echo "Enter your username: "
+read USERNAME
 set -e
 # Installing Basic Packages
 sudo pacman -Syu --needed --noconfirm curl terminus-font base-devel rsync reflector networkmanager git neofetch nano vim 
-sudo setfont ter-v22b
-
 # Enable parellel Downloads
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Setting Mirrors for fast downloads 
-iso=$(curl -4 ifconfig.co/country-iso)
-sudo reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist
-
+sudo systemctl start reflector.service
 # Installing yay aur helper
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
@@ -37,7 +36,7 @@ git clone https://github.com/alvatip/Nordzy-cursors
 cd Nordzy-cursors 
 sudo bash install.sh
 sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-sudo mv dotfonts/fontawesome/*.otf /home/$USER/.fonts/
+sudo mv fonts/dotfonts/fontawesome/*.otf /home/$USER/.fonts/
 sudo unzip FiraCode.zip -d /home/$USER/.fonts/
 sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
 sudo unzip Meslo.zip -d /home/$USER/.fonts/
