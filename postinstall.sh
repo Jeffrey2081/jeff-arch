@@ -36,7 +36,7 @@ git clone https://github.com/alvatip/Nordzy-cursors
 cd Nordzy-cursors 
 sudo bash install.sh
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-mv fonts/dotfonts/fontawesome/otfs/* /home/$USER/.fonts/
+cp -r fonts/dotfonts/fontawesome/otfs/* /home/$USER/.fonts/
 unzip FiraCode.zip -d /home/$USER/.fonts/
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
  unzip Meslo.zip -d /home/$USER/.fonts/
