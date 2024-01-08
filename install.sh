@@ -16,6 +16,8 @@ cd ..
 mkdir /home/$USERNAME/Pictures
 mkdir /home/$USERNAME/.config
 mkdir /home/$USERNAME/.fonts
+mkdir /home/$USERNAME/.local/
+mkdir /home/$USERNAME/.local/share/
 mkdir /home/$USERNAME/.local/share/icons
 # Installing the dependencies and the window manager bspwm
 yay -S nerd-fonts-complete-starship noto-fonts-emoji netctl variety feh ttf-font-awesome jq polybar redshift sddm nano vim sxhkd neofetch psmisc lxappearance papirus-icon-theme noto-fonts-emoji bspwm kitty polybar picom thunar nitrogen xorg unzip yad wget pulseaudio pavucontrol qt5-quickcontrols qt5-quickcontrols2 qt5-svg rofi lxpolkit-git ttf-font-awesome brave-bin --noconfirm
