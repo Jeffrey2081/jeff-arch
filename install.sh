@@ -31,7 +31,7 @@ cp -r fonts/dotfonts/* /home/$USERNAME/.fonts/
 
 git clone https://github.com/alvatip/Nordzy-cursors
 mkdir ~/.local/share/icons
-cp -r Nordzy-cursors/ ~/.local/share/icons
+cp -r Nordzy-cursors/  ~/.local/share/icons
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 cp -r /home/$USERNAME/jeff-arch/fonts/dotfonts/fontawesome/otfs/* /home/$USERNAME/.fonts/
 unzip FiraCode.zip -d /home/$USERNAME/.fonts/
