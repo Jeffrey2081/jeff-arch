@@ -1,4 +1,5 @@
 #! /bin/sh
+sudo pacman -Syu --needed --noconfirm curl terminus-font base-devel rsync reflector networkmanager git neofetch nano vim 
 sudo setfont ter-v22b
 echo "Enter your username:  "
 read USERNAME
