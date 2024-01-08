@@ -16,7 +16,7 @@ cd ..
 mkdir /home/$USERNAME/Pictures
 mkdir /home/$USERNAME/.config
 mkdir /home/$USERNAME/.fonts
-
+mkdir /home/$USERNAME/.local/share/icons
 # Installing the dependencies and the window manager bspwm
 yay -S nerd-fonts-complete-starship noto-fonts-emoji netctl variety feh ttf-font-awesome jq polybar redshift sddm nano vim sxhkd neofetch psmisc lxappearance papirus-icon-theme noto-fonts-emoji bspwm kitty polybar picom thunar nitrogen xorg unzip yad wget pulseaudio pavucontrol qt5-quickcontrols qt5-quickcontrols2 qt5-svg rofi lxpolkit-git ttf-font-awesome brave-bin --noconfirm
 
@@ -30,7 +30,7 @@ cp -r fonts/dotfonts/* /home/$USERNAME/.fonts/
 
 
 git clone https://github.com/alvatip/Nordzy-cursors
-mkdir ~/.local/share/icons
+
 cp -r Nordzy-cursors/  ~/.local/share/icons
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 cp -r /home/$USERNAME/jeff-arch/fonts/dotfonts/fontawesome/otfs/* /home/$USERNAME/.fonts/
