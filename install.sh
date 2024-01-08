@@ -22,21 +22,21 @@ yay -S nerd-fonts-complete-starship noto-fonts-emoji netctl variety feh ttf-font
 # Theming
 git clone https://github.com/Jeffrey2081/jeff-arch
 cd ~/jeff-arch || exit
-cp -r bg.jpg /home/$USER/Pictures/bg.jpg
-cp -r dotconfig/* /home/$USER/.config/
+cp -r bg.jpg /home/$USERNAME/Pictures/bg.jpg
+cp -r dotconfig/* /home/$USERNAME/.config/
 git clone https://github.com/Jeffrey2081/fonts
-cp -r fonts/dotfonts/* /home/$USER/.fonts/
+cp -r fonts/dotfonts/* /home/$USERNAME/.fonts/
 
 
 git clone https://github.com/alvatip/Nordzy-cursors
 mkdir ~/.local/share/icons
 cp -r Nordzy-cursors/ ~/.local/share/icons
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-cp -r /home/$USER/jeff-arch/fonts/dotfonts/fontawesome/otfs/* /home/$USER/.fonts/
-unzip FiraCode.zip -d /home/$USER/.fonts/
+cp -r /home/$USERNAME/jeff-arch/fonts/dotfonts/fontawesome/otfs/* /home/$USERNAME/.fonts/
+unzip FiraCode.zip -d /home/$USERNAME/.fonts/
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
- unzip Meslo.zip -d /home/$USER/.fonts/
-sudo chown $USER:$USER /home/$USER/*
+ unzip Meslo.zip -d /home/$USERNAME/.fonts/
+sudo chown $USERNAME:$USERNAME /home/$USERNAME/*
 cd /usr/share/themes/ 
 sudo git clone https://github.com/EliverLara/Nordic.git
 sudo systemctl enable sddm
