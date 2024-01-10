@@ -4,8 +4,6 @@ sudo setfont ter-v22b
 echo "Enter your username:  "
 read USERNAME
 set -e
-# Installing Basic Packages
-sudo pacman -Syu --needed --noconfirm curl terminus-font base-devel rsync reflector networkmanager git neofetch nano vim 
 # Installing yay aur helper
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
@@ -20,10 +18,9 @@ mkdir /home/$USERNAME/.local/
 mkdir /home/$USERNAME/.local/share/
 mkdir /home/$USERNAME/.local/share/icons
 # Installing the dependencies and the window manager bspwm
-yay -S nerd-fonts-complete-starship noto-fonts-emoji netctl variety feh ttf-font-awesome jq polybar redshift sddm nano vim sxhkd neofetch psmisc lxappearance papirus-icon-theme noto-fonts-emoji bspwm kitty polybar picom thunar nitrogen xorg unzip yad wget pulseaudio pavucontrol qt5-quickcontrols qt5-quickcontrols2 qt5-svg rofi lxpolkit-git ttf-font-awesome brave-bin --noconfirm
+yay -S --noconfirm nerd-fonts-complete-starship noto-fonts-emoji netctl variety feh ttf-font-awesome jq polybar redshift sddm nano vim sxhkd neofetch psmisc lxappearance papirus-icon-theme noto-fonts-emoji bspwm kitty polybar picom thunar nitrogen xorg unzip yad wget pulseaudio pavucontrol qt5-quickcontrols qt5-quickcontrols2 qt5-svg rofi lxpolkit-git ttf-font-awesome brave-bin --noconfirm
 
 # Theming
-git clone https://github.com/Jeffrey2081/jeff-arch
 cd ~/jeff-arch || exit
 cp -r bg.jpg /home/$USERNAME/Pictures/bg.jpg
 cp -r dotconfig/* /home/$USERNAME/.config/
