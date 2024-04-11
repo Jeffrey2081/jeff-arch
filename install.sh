@@ -15,7 +15,7 @@ sudo pacman -Syu --noconfirm base-devel git
 
 # Install yay AUR Helper
 git clone https://aur.archlinux.org/yay-git.git
-cd yay || exit
+cd yay-git
 makepkg -si --noconfirm
 cd ..
 rm -rf yay-git
@@ -70,7 +70,7 @@ cd "$builddir" || exit
 rm -rf Nordzy-cursors
 
 # Install brave-browser
-yay -Sy brave-bin
+yay -Sy brave-bin --noconfirm
 
 # Enable graphical login and change target from CLI to GUI
 sudo systemctl enable sddm
