@@ -23,18 +23,18 @@ rm -rf yay-git
 # Making .config and Moving config files and background to Pictures
 username=$(id -u -n 1000)
 builddir=$(pwd)
-mkdir -p "/home/$username/.config"
-mkdir -p "/home/$username/.fonts"
-mkdir -p "/home/$username/Pictures"
+mkdir -p "~/.config"
+mkdir -p "~/.fonts"
+mkdir -p "~/Pictures"
 mkdir -p /usr/share/sddm/themes
 cp .Xresources "/home/$username"
-cp .Xnord "/home/$username"
-cp -R dotconfig/* "/home/$username/.config/"
-cp bg.jpg "/home/$username/Pictures/"
-mv user-dirs.dirs "/home/$username/.config"
-sudo chown -R "$username:$username" "/home/$username"
+cp .Xnord "~/"
+cp -R dotconfig/* "~/.config/"
+cp bg.jpg "~/Pictures/"
+mv user-dirs.dirs "~/.config"
+sudo chown -R "$username:$username" "~/"
 tar -xzvf sugar-candy.tar.gz -C /usr/share/sddm/themes
-mv "/home/$username/.config/sddm.conf" /etc/sddm.conf
+mv "~/.config/sddm.conf" /etc/sddm.conf
 
 # Installing sugar-candy dependencies
 yay -S --noconfirm qt5-svg qt5-declarative
@@ -51,11 +51,11 @@ git clone https://github.com/EliverLara/Nordic.git
 cd "$builddir" || exit
 yay -S --noconfirm ttf-font-awesome
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-unzip FiraCode.zip -d "/home/$username/.fonts"
+unzip FiraCode.zip -d "~/.fonts"
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
-unzip Meslo.zip -d "/home/$username/.fonts"
-mv dotfonts/fontawesome/otfs/*.otf "/home/$username/.fonts/"
-sudo chown "$username:$username" "/home/$username/.fonts/"*
+unzip Meslo.zip -d "~/.fonts"
+mv dotfonts/fontawesome/otfs/*.otf "~/.fonts/"
+sudo chown "$username:$username" "~/.fonts/"*
 
 # Reloading Font
 fc-cache -vf
